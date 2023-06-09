@@ -1,0 +1,439 @@
+:root {
+  --cor-1: #edf6ee;
+  --cor-2: #d1c089;
+  --cor-3: #b3204d;
+  --cor-16:#daebd6;
+  --cor-31:#7a1936;
+  --cor-4: #412e28 ;
+  --cor-5: #151101;
+  --cor-6: #333;
+  --cor-7: #007bff;
+  --cor-8: #0062cc;
+  --cor-9: #384E77;
+  --cor-10: #9C2C2C;
+  --cor-11: #6B2E5F;
+  --cor-12: #FFA500;
+  --cor-13: #008B8B;
+  --cor-14: #FFD700;
+  --cor-15: #800000;
+  --cor-branco:white;
+  --cor-preto: black;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--cor-1);
+} 
+
+/* ################################
+            Header
+###################################*/
+
+header {
+  background-color:var(--cor-2);
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+  
+.logo img {
+  width: 170px;
+  padding-left: 25px;
+}
+  
+nav ul {
+  list-style: none;
+  display: flex;
+}
+  
+nav ul li {
+  margin-right: 20px;
+  padding-right: 30px;  
+}
+  
+nav ul li:last-child {
+  margin-right: 0;
+}
+  
+nav ul li a {
+  color: var(--cor-6);
+  background-color: var(--cor-1);
+  border-radius: 70px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px; 
+ }
+
+/* ##############################
+Form
+#################################*/
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+input[type="text"] {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+  
+button[type="submit"] {
+  background-color: var(--cor-3);
+  color: var(--cor-branco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+  background-color: var(--cor-31);
+}
+
+  /* ###############
+  PRODUTOS
+  ################## */
+
+.produtos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+  
+.produto {
+  width: 30%;
+  background-color: var(--cor-branco);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+  
+.produto img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+  
+.produto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+ 
+.produto button {
+  background-color: var(--cor-3);
+  color: var(--cor-branco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: var(--cor-8);
+}
+  
+
+/* ##############################
+Footer
+#################################*/
+
+footer {
+  background-color: var(--cor-2);
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: var(--cor-preto);
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+
+}
+
+.phone-numbers {
+  margin-top: 10px;
+}
+
+.footer-section .redesSocial{
+  justify-content: center;
+  display: flex;
+}
+
+   
+/* 
+########################
+sobre nos
+########################
+*/
+
+.sobrenos-on{
+  max-width: 100%;
+  background-color: var(--cor-branco);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  display: flex;
+}
+
+.sobrenos1{
+  display: inline ;
+  width: 100%;
+  padding: 20px;
+
+}
+
+
+/*
+ #############################
+central
+############################ 
+*/
+
+		
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--cor-1);
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.central input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: var(--cor-16);
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #00703C;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #005026;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.central a {
+  color: #00703C;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #005026;
+}
+
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 770px) {
+  header {
+  flex-wrap: wrap;
+  }
+  
+  .logo img {
+  padding-left: 0;
+  margin: 50%;
+  }
+  
+  nav ul {
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  
+  nav ul li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-right: 0;
+  }
+  
+  .produtos .produto {
+  width: 100%;
+  }
+  
+  footer {
+  flex-wrap: wrap;
+  }
+  
+  .footer-section {
+  width: 100%;
+  margin: 30px;
+  }
+  
+  .central .container {
+  max-width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+  width: 100%;
+  }
+  }
+
+  #menuButton {
+    display: none;
+  }
+  
+  @media screen and (max-width: 769px) {
+    #menuButton {
+      display: block;
+    }
+  }
+  .menu-icon {
+    cursor: pointer;
+  }
+
+
+
+  @media screen and (min-width: 770px) and (max-width: 1215px) {
+  
+    header {
+      flex-wrap: wrap;
+      }
+      
+      .logo img {
+      padding-left: 0;
+      margin: 50%;
+      }
+      
+      nav ul {
+      justify-content: center;
+      flex-wrap: wrap;
+      }
+      
+      nav ul li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding-right: 0;
+      }
+      
+      .produtos .produto {
+      width: 100%;
+      }
+      
+      footer {
+      flex-wrap: wrap;
+      }
+      
+      .footer-section {
+      width: 100%;
+      margin: 30px;
+      }
+      
+      .central .container {
+      max-width: 100%;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+      width: 100%;
+      }
+      }
+    
+      #menuButton {
+        display: none;
+      }
+      
+      @media screen and (max-width: 769px) {
+        #menuButton {
+          display: block;
+        }
+      }
+      .menu-icon {
+        cursor: pointer;
+      }
+    
